@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from uxliner.com/xtreamer/demo/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 07:44:08 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Jetways Travels</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/addSlider.css">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/et-line-font/et-line-font.css">
+<link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="css/simple-lineicon/simple-line-icons.css">
+<link rel="stylesheet" href="css/flag/css/flag-icon.css">
+
+<style>
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+		
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+		
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+</style>
+</head>
+<body>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container-fluid">
+    <div id="carouselExample" class="carousel slide" >
+        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+           
+        
+		
+		
+			<div class="filter">
+						<ul class="nav nav-tabs customtab" role="tablist">
+						 
+						  <li class=" col-md-2 carousel-item active">
+							<a class="nav-link active" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/spice-jet.png" alt="" style="max-width:28px;"><label class="time">SpiceJet</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						  <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 8,000</span></span></a>
+						  </li>
+						  <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/indigo-img.png" alt="" style="max-width:28px;"><label class="time">IndiGo</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						 <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/spice-jet.png" alt="" style="max-width:28px;"><label class="time">SpiceJet</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						   <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						   <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 8,000</span></span></a>
+						  </li>
+						  <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/indigo-img.png" alt="" style="max-width:28px;"><label class="time">IndiGo</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						 <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/spice-jet.png" alt="" style="max-width:28px;"><label class="time">SpiceJet</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						   <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						   <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 8,000</span></span></a>
+						  </li>
+						  <li class="carousel-item col-md-2">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/indigo-img.png" alt="" style="max-width:28px;"><label class="time">IndiGo</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						 <li class="carousel-item col-md-3 ">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/spice-jet.png" alt="" style="max-width:28px;"><label class="time">SpiceJet</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+						   <li class="carousel-item col-md-3">
+							<a class="nav-link" data-toggle="tab" href="#FlightInfo" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">
+							<img src="img/air-line-img.png" alt="" style="max-width:28px;"><label class="time">Air India</label><span><i class="fa fa-inr" data-unicode="f156"></i> 7,264</span></span></a>
+						  </li>
+							
+						  						  
+						</ul>
+						</div>
+					</div>
+		
+		
+		<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+		
+		
+		
+    </div>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.tmpl.min.js"></script>
+<script src="js/flightTemplet.js"></script>
+<script src="bootstrap/js/popper.min.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+<script src="js/tempapp.js"></script> 
+<script src="plugins/jquery-sparklines/jquery.sparkline.min.js"></script> 
+<script src="plugins/jquery-sparklines/sparkline-int.js"></script> 
+<script src="plugins/raphael/raphael-min.js"></script> 
+<script src="plugins/morris/morris.js"></script> 
+<script src="plugins/functions/morris-init.js"></script>
+<script src="js/mobile-nav.js"></script>
+<script src="js/wow.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/addSlider.js"></script>
+<script src="js/Obj.min.js"></script>
+<script src="js/addSlider.js"></script>
+ <script src="js/mobiscroll.jquery.min.js"></script>
+	<script>
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+
+	</body>
+	</html>
